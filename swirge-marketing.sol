@@ -86,15 +86,15 @@ interface IERC20 {
     event Approval(address indexed owner, address indexed spender, uint256 value);
 }
 
-// File: contracts/timelock.sol
+// File: contracts/swirge-marketing.sol
 
 pragma solidity ^0.8.4;
 
 
-contract Timelock {
-  uint public constant duration = 365 days;
+contract SwirgeMarketing {
+  uint public constant duration = 0 days;
   uint public immutable end;
-  address payable public immutable owner  = payable(0xee3e5562832D0ffa29Cf34BA68587350AAd13508);
+  address payable public immutable owner  = payable(0xc2253Ea33F98034Bc793496340bbE8D5D65e5460);
   uint256 public balance = 0;
 
   constructor() {
